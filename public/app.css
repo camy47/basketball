@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #FF6B00;
+    --secondary-color: #1E3D59;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --spacing: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.main-header {
+    background-color: var(--secondary-color);
+    padding: var(--spacing);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.site-title {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: var(--spacing);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff8533;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing);
+}
+
+.alert {
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: var(--spacing);
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: var(--spacing);
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .site-title {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-header {
+        padding: 15px;
+    }
+}
+
+body{
+
+    background: white;
+    color: black;
+    max-width: 600px;
+    margin: auto;
+    font-family: sans-serif;
+
+
+}
+
+p{
+    list-style: 1.6;
+
+}
+
+article + article {
+
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid #c5c5c5;
+
+}
